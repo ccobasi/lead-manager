@@ -9,6 +9,11 @@ export class Leads extends Component {
         leads: PropTypes.array.isRequired,
         getLeads: PropTypes.func.isRequired,
       };
+
+      componentDidMount() {
+        this.props.getLeads();
+      }
+
     render() {
         return (
             <div>
